@@ -10,7 +10,7 @@
 <body>
 
 <script>
-    
+  "use strict";
 // Create div with id to connect your list start 
 let myDiv = document.createElement('div');
 myDiv.id = 'working-schedule';
@@ -37,7 +37,7 @@ let days = document.getElementById("workingDays"),
     today = new Date().getDay(); // 0 to 6 where 0 is Sunday
     //today = 0; 
     //testing 1
-    //today = 1;
+    // today = 1;
     //testing 2
     //today = 2;
     //testing 3
@@ -52,7 +52,7 @@ let days = document.getElementById("workingDays"),
 // get the date for today end
 
 // give a styling class to working days start
-element = document.getElementById("workingDays");
+let element = document.getElementById("workingDays");
 element.classList.add("workingDays");
 element = document.getElementById("working-schedule");
 element.classList.add("working-schedule");
@@ -67,7 +67,7 @@ p.innerHTML += "<p class='subtitle'>είμαστε ανοιχτά και σας 
 }
 else{
 days.children[today].id = "red";
-p = document.getElementById("red");
+let p = document.getElementById("red");
 p.innerHTML += "<p class='subtitle'>Θα είμαστε κλειστά σας περιμένουμε την Δευτέρα</p>";
 }
 

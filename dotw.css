@@ -12,7 +12,7 @@ body{
 border: 1px solid black !important;
 border-radius: 15px;
 list-style-type: none;
-background-color: lightgrey;
+background-color: orange;
 width: 13%;
 justify-content: center;
 justify-items: center;
@@ -86,7 +86,7 @@ hr{
             border: 1px solid black !important;
             border-radius: 15px;
             list-style-type: none;
-            background-color: lightgrey;
+            background-color: orange;
             width: 80%;
             justify-content: center;
             justify-items: center;

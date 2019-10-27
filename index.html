@@ -35,27 +35,34 @@ let workingDay = newDate.getDay();
 
 let days = document.getElementById("workingDays"),
     today = new Date().getDay(); // 0 to 6 where 0 is Sunday
+    // today = 1; testing 1
+    // today = 2; testing 2
+    // today = 3; testing 3
+    // today = 4; testing 4
+    // today = 5; testing 5
+    // today = 6; testing 6
 // get the date for today end
 
 // give a styling class to working days start
-var element = document.getElementById("workingDays");
+element = document.getElementById("workingDays");
 element.classList.add("workingDays");
-var element = document.getElementById("working-schedule");
+element = document.getElementById("working-schedule");
 element.classList.add("working-schedule");
 
 // give a styling class to working days & off days end
 
-if (0 < today && today < 6) {
+if (0 < today && today <= 6) {
 days.children[today].id = "green";
-var paragraph = document.getElementById("green");
-paragraph.innerHTML += "<p>είμαστε ανοιχτά και σας περιμένουμε</p>";
+p = document.getElementById("green");
+p.innerHTML += "<p class='subtitle'>είμαστε ανοιχτά και σας περιμένουμε</p>";
 
 }
 else{
 days.children[today].id = "red";
-var paragraph = document.getElementById("red");
-paragraph.innerHTML += "<p class='subtitle'>Θα είμαστε κλειστά σας περιμένουμε την Δευτέρα</p>";
+p = document.getElementById("red");
+p.innerHTML += "<p class='subtitle'>Θα είμαστε κλειστά σας περιμένουμε την Δευτέρα</p>";
 }
+
 </script>
 </body>
 </html>

@@ -2,10 +2,10 @@ body{
     margin: 0px 0px;
 }
 #green{
-    background-color: chartreuse;
+    background-color: chartreuse !important;
 }
 #red{
-    background-color: lightcoral;
+    background-color: lightcoral !important;
 }
 /* styling general li elements */
 .workingDays li{
@@ -100,4 +100,12 @@ hr{
             
             }
     
+  }
+
+  button{
+      font-size: 20px;
+      padding: 15px;
+      margin: 20px;
+      background-color: lightgray;
+      border: 1px solid light;
   }
